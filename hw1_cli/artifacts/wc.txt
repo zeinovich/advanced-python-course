@@ -1,0 +1,5 @@
+❯ python -m hw1_cli.wc hw1_cli/nl.py hw1_cli/tail.py hw1_cli/wc.py
+     14      28     306 hw1_cli/nl.py
+     24      58     590 hw1_cli/tail.py
+     31      85     796 hw1_cli/wc.py
+     69     171    1692 total

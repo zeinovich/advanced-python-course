@@ -1,0 +1,43 @@
+❯ echo -e "This\none\nmimics\ntail\nutil\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19" | python -m hw1_cli.tail
+mimics
+tail
+util
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+
+❯ python -m hw1_cli.tail hw1_cli/nl.py hw1_cli/tail.py
+==> hw1_cli/nl.py <==
+    for i, line in enumerate(file, start=1):
+        print(f"{i}\t{line.rstrip()}")
+
+
+if __name__ == "__main__":
+    if len(sys.argv) > 1:
+        with open(sys.argv[1], "r", encoding="utf-8") as f:
+            number_lines(f)
+    else:
+        number_lines(sys.stdin)
+
+==> hw1_cli/tail.py <==
+        for i, filename in enumerate(sys.argv[1:]):
+            if len(sys.argv) > 2:
+                print(f"==> {filename} <==")
+
+            with open(filename, "r", encoding="utf-8") as f:
+                tail(f, NUM_LINES_DEFAULT)
+                if i < len(sys.argv) - 2:
+                    print()
+    else:
+        tail(sys.stdin, NUM_LINES_STDIN)

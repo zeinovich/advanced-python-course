@@ -1,0 +1,22 @@
+❯ echo -e "CLI\nscript\nthat\nmimics\nnl util" | python -m hw1_cli.nl
+1       CLI
+2       script
+3       that
+4       mimics
+5       nl util
+
+❯ python -m hw1_cli.nl hw1_cli/nl.py
+1       import sys
+2
+3
+4       def number_lines(file):
+5           for i, line in enumerate(file, start=1):
+6               print(f"{i}\t{line.rstrip()}")
+7
+8
+9       if __name__ == "__main__":
+10          if len(sys.argv) > 1:
+11              with open(sys.argv[1], "r", encoding="utf-8") as f:
+12                  number_lines(f)
+13          else:
+14              number_lines(sys.stdin)
