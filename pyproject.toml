@@ -1,0 +1,17 @@
+[project]
+name = "advanced-python-course"
+version = "0.1.0"
+description = "Homeworks for Advanced Python Course ITMO 2025"
+authors = [
+    {name = "zeinovich",email = "nikita.zinovich@gmail.com"}
+]
+readme = "README.md"
+package-mode = false
+requires-python = ">=3.12"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
