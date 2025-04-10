@@ -1,0 +1,22 @@
+❯ python -m hw4.ab_app
+[10:06:34] Enter message: a
+[10:06:36] Enter message: b
+[10:06:36] Enter message: c
+[10:06:36] Enter message: d
+[10:06:37] Enter message: e
+[10:06:37] Enter message: f
+[10:06:38] Enter message: d
+[10:06:38] Enter message: [10:06:40] Process A forwarded: a
+[10:06:40] Process B output: n
+[10:06:45] Process A forwarded: b
+[10:06:45] Process B output: o
+[10:06:50] Process A forwarded: c
+[10:06:50] Process B output: p
+[10:06:55] Process A forwarded: d
+[10:06:55] Process B output: q
+[10:07:00] Process A forwarded: e
+[10:07:00] Process B output: r
+[10:07:05] Process A forwarded: f
+[10:07:05] Process B output: s
+[10:07:10] Process A forwarded: d
+[10:07:10] Process B output: q
